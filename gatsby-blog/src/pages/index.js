@@ -61,7 +61,7 @@ export default ({data}) => (
       <div style={{textAlign: `center`}}>
         <h1>My Projects</h1>
       </div>
-      <div style={{display:`flex`, justifyContent:`space-between`}}>
+      <div style={{display:`flex`, justifyContent:`space-between`, marginRight: `10px`}}>
         <Iframe url="http://www.youtube.com/embed/xDMP3i36naA"
           width="450px"
           height="450px"
