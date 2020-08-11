@@ -10,8 +10,8 @@ import { faEnvelope, faMapMarker, faPhone } from '@fortawesome/free-solid-svg-ic
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-ReactGA.initialize('UA-174629408-1');
-ReactGA.pageview(window.location.pathname + window.location.search);
+// ReactGA.initialize('UA-174629408-1');
+// ReactGA.pageview(window.location.pathname + window.location.search);
 
 const BlogLink = styled(Link)`
   text-decoration: none;
