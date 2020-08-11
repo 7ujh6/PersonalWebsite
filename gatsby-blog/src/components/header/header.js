@@ -69,8 +69,8 @@ const Header = ({ siteTitle}) => (
       <h2 style={{margin: 0, marginTop: `-5%`}}>Software Engineer</h2>
       <div style={{ width: `20%`, display:`flex`, justifyContent:`space-between`, marginTop: `10px`}}>
         <a target="_blank" href="https://github.com/7ujh6"><TooltipContainer><FontAwesomeIcon style={{cursor: `pointer`}} icon={faGithub} /><span>Github</span></TooltipContainer></a>
-        <a target="_blank" href="https://www.linkedin.com/in/stanton-dobson-467b16104/"><TooltipContainer><FontAwesomeIcon style={{cursor: `pointer`}} icon={faLinkedin} /><span>LinkedIn</span></TooltipContainer></a>
-        <a target="_blank" href="./resume.pdf" download><TooltipContainer><FontAwesomeIcon style={{cursor: `pointer`, color: `indigo`}} icon={faPrint} /><span>Resume</span></TooltipContainer></a>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/stantondobson/"><TooltipContainer><FontAwesomeIcon style={{cursor: `pointer`}} icon={faLinkedin} /><span>LinkedIn</span></TooltipContainer></a>
+        <a target="_blank" rel="noopener noreferrer" href="./resume.pdf" download><TooltipContainer><FontAwesomeIcon style={{cursor: `pointer`, color: `indigo`}} icon={faPrint} /><span>Resume</span></TooltipContainer></a>
       </div>
     </div>
   </header>

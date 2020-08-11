@@ -2,14 +2,16 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import styled from "styled-components"
 import Iframe from 'react-iframe'
+import ReactGA from 'react-ga'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faMapMarker, faPhone } from '@fortawesome/free-solid-svg-icons'
 
-
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+
+ReactGA.initialize('UA-174629408-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 const BlogLink = styled(Link)`
   text-decoration: none;
@@ -48,7 +50,7 @@ export default ({data}) => (
         </div>
         <div style={{display: `flex`, justifyContent: `space-between`}}>
           <FontAwesomeIcon icon={faEnvelope} style={{marginRight: `5px`}}/>
-          <a style={{fontFamily: `Muli`, textDecoration: `underline`, color: `black`}} target="_blank" href="mailto:stantondobson@gmail.com">stantondobson@gmail.com</a>
+          <a rel="noopener noreferrer" style={{fontFamily: `Muli`, textDecoration: `underline`, color: `black`}} target="_blank" href="mailto:stantondobson@gmail.com">stantondobson@gmail.com</a>
         </div>
         <div>
           <FontAwesomeIcon icon={faPhone} style={{marginRight: `5px`}} />
@@ -61,7 +63,11 @@ export default ({data}) => (
       <div style={{textAlign: `center`}}>
         <h1>My Projects</h1>
       </div>
-      <div style={{display:`flex`, justifyContent:`space-between`, marginRight: `10px`}}>
+      <div style={{display:`flex`, justifyContent:`space-between`, marginLeft: `20%`, marginRight: `20%`}}>
+        <a target="_blank" rel="noopener noreferrer" href="https://lang-flash.herokuapp.com/">Langflash</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://crown-clothing-live-prod-ed.herokuapp.com/">EcommerceApp</a>
+      </div>
+      <div style={{display:`flex`, justifyContent:`space-between`, marginRight: `10px`, overflowX: `scroll`}}>
         <Iframe url="https://lang-flash.herokuapp.com/"
           width="450px"
           height="450px"
