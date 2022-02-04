@@ -64,11 +64,11 @@ export default ({data}) => (
         <h1>My Projects</h1>
       </div>
       <div style={{display:`flex`, justifyContent:`space-between`, marginLeft: `20%`, marginRight: `20%`}}>
-        <a target="_blank" rel="noopener noreferrer" href="https://lang-flash.herokuapp.com/">Langflash</a>
+        <a target="_blank" rel="noopener noreferrer" href="http://node-chat-app-7ujh6.herokuapp.com/">Chat App</a>
         <a target="_blank" rel="noopener noreferrer" href="https://crown-clothing-live-prod-ed.herokuapp.com/">EcommerceApp</a>
       </div>
       <div style={{display:`flex`, justifyContent:`space-between`, marginRight: `10px`, overflowX: `scroll`}}>
-        <Iframe url="https://lang-flash.herokuapp.com/"
+        <Iframe url="http://node-chat-app-7ujh6.herokuapp.com/"
           width="450px"
           height="450px"
           id="myId"
