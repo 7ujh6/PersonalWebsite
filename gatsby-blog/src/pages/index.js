@@ -68,7 +68,7 @@ export default ({data}) => (
         <a target="_blank" rel="noopener noreferrer" href="https://crown-clothing-live-prod-ed.herokuapp.com/">EcommerceApp</a>
       </div>
       <div style={{display:`flex`, justifyContent:`space-between`, marginRight: `10px`, overflowX: `scroll`}}>
-        <Iframe url="http://node-chat-app-7ujh6.herokuapp.com/"
+        <Iframe url="https://lang-flash.herokuapp.com/"
           width="450px"
           height="450px"
           id="myId"
