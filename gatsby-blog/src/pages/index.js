@@ -44,15 +44,15 @@ export default ({data}) => (
       </RaisedBox>
       <RaisedBox style={{display: `flex`, flexDirection: `column`}}>
         <h2>Contact Me</h2>
-        <div style={{display: `flex`, justifyContent: `space-between`}}>
+        <div {{display: `flex`, alignItems: 'center', marginBottom: '8px'}}>
           <FontAwesomeIcon icon={faMapMarker} style={{marginRight: `5px`}} />
           <span style={{fontFamily: `Muli`}}>Boise, Idaho</span>
         </div>
-        <div style={{display: `flex`, justifyContent: `space-between`}}>
+        <div style={{display: `flex`, alignItems: 'center', marginBottom: '8px'}}>
           <FontAwesomeIcon icon={faEnvelope} style={{marginRight: `5px`}}/>
           <a rel="noopener noreferrer" style={{fontFamily: `Muli`, textDecoration: `underline`, color: `black`}} target="_blank" href="mailto:stantondobson@gmail.com">stantondobson@gmail.com</a>
         </div>
-        <div>
+        <div style={{display: `flex`, alignItems: 'center'}}>
           <FontAwesomeIcon icon={faPhone} style={{marginRight: `5px`}} />
           <span style={{fontFamily: `Muli`}}>912-507-9572</span>
         </div>
@@ -63,7 +63,7 @@ export default ({data}) => (
       <div style={{textAlign: `center`}}>
         <h1>My Projects</h1>
       </div>
-      <div style={{display:`flex`, justifyContent:`space-between`, marginLeft: `20%`, marginRight: `20%`}}>
+      <div style={{textAlign: 'center', marginLeft: `20%`, marginRight: `20%`}}>
         <a target="_blank" rel="noopener noreferrer" href="https://github.com/7ujh6/E-commerce-Store">EcommerceApp (View on GitHub)</a>
       </div>
       <div style={{marginTop: '20px', textAlign: 'center'}}>
