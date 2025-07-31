@@ -1,11 +1,11 @@
 import React from "react"
 import { graphql, Link } from "gatsby"
 import styled from "styled-components"
-import Iframe from 'react-iframe'
-import ReactGA from 'react-ga'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope, faMapMarker, faPhone } from '@fortawesome/free-solid-svg-icons'
+
+import ecommerceScreenshot from "../images/project1.png";
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -39,14 +39,14 @@ export default ({data}) => (
       <RaisedBox style={{marginRight: `10px`}}>
         <h2 style={{textAlign:`center`}}>About Me</h2>
         <p style={{fontFamily: `Muli`}}>
-          Hello. Welcome to my site. I am Stanton Dobson, a React developer and a recent graduate of Georgia Southern University where I earned a BS in the field of computer science. Above you can find my resume as well as links to my github and linkedin. Below are some of my projects which you can view as well, along with a few posts about myself and my interests. 
+        Hello, I'm Stanton Dobson, a Software Engineer with over 4 years of experience building and operating resilient, scalable backend and full-stack systems. I'm passionate about solving complex infrastructure problems and using automation to drive operational excellence. This portfolio showcases some of my foundational projects and my journey as a builder.
         </p>
       </RaisedBox>
       <RaisedBox style={{display: `flex`, flexDirection: `column`}}>
         <h2>Contact Me</h2>
         <div style={{display: `flex`, justifyContent: `space-between`}}>
           <FontAwesomeIcon icon={faMapMarker} style={{marginRight: `5px`}} />
-          <span style={{fontFamily: `Muli`}}>Savannah, GA (willing to relocate)</span>
+          <span style={{fontFamily: `Muli`}}>Boise, Idaho</span>
         </div>
         <div style={{display: `flex`, justifyContent: `space-between`}}>
           <FontAwesomeIcon icon={faEnvelope} style={{marginRight: `5px`}}/>
@@ -64,25 +64,18 @@ export default ({data}) => (
         <h1>My Projects</h1>
       </div>
       <div style={{display:`flex`, justifyContent:`space-between`, marginLeft: `20%`, marginRight: `20%`}}>
-        <a target="_blank" rel="noopener noreferrer" href="http://node-chat-app-7ujh6.herokuapp.com/">Chat App</a>
-        <a target="_blank" rel="noopener noreferrer" href="https://crown-clothing-live-prod-ed.herokuapp.com/">EcommerceApp</a>
+        <a target="_blank" rel="noopener noreferrer" href="https://github.com/7ujh6/E-commerce-Store">EcommerceApp (View on GitHub)</a>
       </div>
-      <div style={{display:`flex`, justifyContent:`space-between`, marginRight: `10px`, overflowX: `scroll`}}>
-        <Iframe url="https://lang-flash.herokuapp.com/"
-          width="450px"
-          height="450px"
-          id="myId"
-          className="myClassname"
-          display="initial"
-          position="relative"/>
-        <Iframe style={{pointerEvents: `none`}} url="https://crown-clothing-live-prod-ed.herokuapp.com"
-          width="450px"
-          height="450px"
-          id="myId"
-          className="myClassname"
-          display="initial"
-          position="relative"/>
-      </div>
+      <div style={{marginTop: '20px', textAlign: 'center'}}>
+        <img 
+          src={ecommerceScreenshot} 
+          alt="Screenshot of the E-commerce Store project homepage" 
+          style={{maxWidth: '80%', border: '1px solid #ccc', borderRadius: '4px'}} 
+        />
+        <p style={{fontFamily: `Muli`, marginTop: '10px'}}>
+          A full-stack e-commerce application I built to teach myself React, Redux, and Firebase. This project showcases my ability to independently build, learn, and solve complex problems from scratch.
+        </p>
+    </div>
     </RaisedBox>
 
     <RaisedBox>
