@@ -44,7 +44,7 @@ export default ({data}) => (
       </RaisedBox>
       <RaisedBox style={{display: `flex`, flexDirection: `column`}}>
         <h2>Contact Me</h2>
-        <div {{display: `flex`, alignItems: 'center', marginBottom: '8px'}}>
+        <div style={{display: `flex`, alignItems: 'center', marginBottom: '8px'}}>
           <FontAwesomeIcon icon={faMapMarker} style={{marginRight: `5px`}} />
           <span style={{fontFamily: `Muli`}}>Boise, Idaho</span>
         </div>
